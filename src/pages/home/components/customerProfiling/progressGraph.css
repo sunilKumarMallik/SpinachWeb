@@ -1,0 +1,20 @@
+svg {
+    /* width: 300px;
+    display: block;
+    position: absolute; */
+    /* width:100% */
+  }
+  svg .path {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 0;
+    animation: dash 4s linear;
+  }
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 320;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  

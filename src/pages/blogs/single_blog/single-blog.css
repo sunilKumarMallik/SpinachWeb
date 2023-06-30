@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  #blog-content-sec #content-section #blog-card-sec .blog-card {
+    height: 180px;
+  }
+  #blog-content-sec #content-section #blog-card-sec .blog-title p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #221d47;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 10px;
+  }
+  #blog-content-sec #content-section #blog-card-sec .blog-title p::after {
+    left: 214px !important;
+    top: -19px !important;
+  }
+  .mob-author-read{
+    font-size: 10px !important;
+    line-height: 2 !important;
+  }
+}

@@ -1,0 +1,265 @@
+.imgbgmain {
+  position: relative;
+  left: 80px;
+  bottom: 60px;
+}
+.imgbgmain-mobile {
+  position: relative;
+  left: 0px;
+  bottom: -3px;
+}
+.imgx {
+  position: relative;
+  left: 46rem;
+  bottom: 30rem;
+}
+.imgy {
+  position: relative;
+  right: 5rem;
+  bottom: 35rem;
+  overflow: hidden;
+}
+.imgz {
+  position: relative;
+  bottom: 17.4rem;
+  right: 13rem;
+}
+.imga {
+  position: relative;
+  bottom: 17rem;
+  left: 12rem;
+}
+.imgx-mobile {
+  position: relative;
+  left: 92%;
+  bottom: 27rem;
+}
+.imgy-mobile {
+  position: relative;
+  right: 5rem;
+  bottom: 26rem;
+  overflow: hidden;
+}
+.imgz-mobile {
+  position: relative;
+  bottom: 17.4rem;
+  right: 13rem;
+}
+.imga-mobile {
+  position: relative;
+  bottom: 17rem;
+  left: 12rem;
+}
+@keyframes nod {
+  30% {
+    transform: rotateY(0deg) rotateY(30deg);
+  }
+
+  40% {
+    transform: rotateY(0deg) rotateY(0deg);
+  }
+
+  60% {
+    transform: rotateY(0deg) rotateY(30deg);
+  }
+
+  70% {
+    transform: rotateY(0deg) rotateY(0deg);
+  }
+}
+
+.iconswave {
+  transform: rotateY(0deg);
+  animation-iteration-count: infinite;
+  animation-name: nod;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+.benefit-header {
+  font-family: "Roundo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+.driver-customer {
+  top: 63px;
+  left: 226px;
+}
+.Headings {
+  color: #000000;
+  font-family: "Roundo";
+  font-style: "normal";
+  font-size: 36px;
+  font-weight: 600;
+}
+.modalbtn {
+  background-color: rgb(207, 202, 202);
+  border: none;
+  width: 200px;
+  border-radius: 10px;
+  color: #000;
+}
+.modalbtn:hover {
+  background-color: #47a561;
+}
+.btnColor {
+  background-color: #e1e8ed;
+  border-radius: 5px;
+}
+.modal-content {
+  border-radius: 12px !important;
+}
+.bg-box-gray {
+  background-color: #f7fafc;
+  padding: 10px;
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* height: 300px;
+  width: 100%; */
+}
+.das-checkbox-fonts {
+  font-family: "Roundo";
+  font-size: medium;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.bold-txt {
+  font-weight: bold;
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .imgy {
+    /* border: 2px solid green; */
+    bottom: 31rem;
+  }
+  .imgx {
+    left: 40rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .imgy {
+    bottom: 28rem;
+  }
+  .imgx {
+    left: 32rem;
+  }
+}
+
+/* @media screen and  (max-width: 992px){
+  #spinach-benefit-sec .carousel-arrow-sec{
+    display: none;
+  }
+} */
+
+@media (max-width: 700px) {
+  .main-tab {
+    display: none;
+  }
+  #spinach-benefit-sec .carousel-arrow-sec .carousel-arrow {
+    display: none !important;
+  }
+}
+@media (min-width: 700px) {
+  .mobile-view-our-model {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .main-box .box {
+    margin-left: 0;
+  }
+  .p-api{
+    width: 100%;
+  }
+  .nav-tabs{
+   margin-left: 55px;
+  }
+}
+
+.li-checkbox::before{
+  content: "\f14a";
+  font-family: fontawesome;
+  color: #37874d;
+  margin-right: 12px;
+}
+.mobile-card-body {
+  background-color: rgb(69, 174, 99) !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid rgb(69, 66, 66);
+  height: 570px;
+}
+.mobile-header {
+  background-color: rgb(46, 135, 71);
+  height: 73px;
+  border: 1px solid #236736;
+  box-sizing: border-box;
+}
+/* li{
+  font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 0;
+    display: flex;
+    color: #000000a3;
+    font-family: Roundo;
+}
+*, :after, :before {
+    box-sizing: border-box;
+} */
+@media (max-width: 700px) {
+  #trusted-by-banks .content-box {
+    display: none !important;
+  }
+  .trusted-btn {
+
+    background: #E6F2E9;
+    border: 1px solid rgba(55, 135, 77, 0.52);
+    border-radius: 8px;
+    font-family: "Roundo";
+  }
+  .mob-trusted {
+    position: relative;
+    bottom: 44px;
+   
+  }
+  .mob-cta-btn-1{
+    left : 26% !important;
+  }
+  .mob-cta-btn-2{
+    margin-top: 60px;
+    left : 25% !important;
+  }
+  .mob-foldDataSection{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .mob-cta-btn-3{
+    margin-top: 60px;
+    left : 25% !important;
+  }
+  .mob-cta-btn-4{
+    left : 25% !important;
+  }
+  .mob-foldDataForth{
+    text-align: center;
+  }
+  .mob-card-header{
+    height: 80px;
+    background-color: #2e8747;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .mob-card-header span{
+    position: relative;
+    top: 30px;
+  }
+}
+@media (min-width: 700px) {
+  .mob-trusted {
+    display: none !important;
+   
+  }
+}

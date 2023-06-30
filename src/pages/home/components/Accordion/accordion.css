@@ -1,0 +1,15 @@
+.hideLoweSection {
+  z-index: 9999;
+  height: 167px;
+  background-color: #45ae63;
+  position: absolute;
+  bottom: -167px;
+}
+.hideLoweSection2 {
+  width: 100vw;
+  z-index: 9999;
+  height: 170px;
+  background-color: #45ae63;
+  position: absolute;
+  bottom: -133px;
+}

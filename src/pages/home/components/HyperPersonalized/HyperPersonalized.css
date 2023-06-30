@@ -1,0 +1,85 @@
+.Behaviour-Campaign {
+  font-family: "Roundo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 147.2%;
+  /* identical to box height, or 18px */
+  color: #000000;
+}
+.HeaderHyperPersonalized {
+  font-family: "Roundo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8.86px;
+  line-height: 11px;
+  color: #000000;
+  position: relative;
+  /* left: -13px; */
+}
+.auto-1010{
+    font-family: 'Roundo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #53575A;
+}
+.merchant-campaign-Served-hyperPersonalized{
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 0.744271px solid #f2f2f2;
+  box-shadow: 23.8167px 14.8854px 26.7937px #f2f2f2;
+  border-radius: 0px 11.6501px 11.6501px 11.6501px;
+  height: 56.71px;
+  width: 120.3px;
+  z-index: 1;
+}
+.header-card {
+  font-family: "Roundo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 147.2%;
+  /* identical to box height, or 15px */
+
+  color: #9e9e9e;
+}
+.card-outer{
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0px 25.0587px 35.7981px rgb(212 223 222 / 27%);
+    border-radius: 7.15963px;
+    max-height: 220px;
+}
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    /* flex-shrink: 1; */
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+.better-perfomed-hyper{
+  position: absolute;
+  left: 100px;
+  bottom: -28px;
+}
+.bar-width{
+  width: 100%;
+  height: 0;
+}
+.mtop-campaign {
+  /* position: absolute;  */
+  /* width: 887px; */
+  height: 26px;
+  /* bottom: 33rem; */
+  background: #CED0D6;
+  box-shadow: 38.0675px 38.0675px 57.1012px #e5f1f0;
+  border-radius: 2.30271px 2.30271px 0px 0px;
+}

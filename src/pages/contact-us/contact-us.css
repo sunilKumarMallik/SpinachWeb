@@ -1,0 +1,25 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+@media (max-width: 992px) {
+    .mob-title{
+      top:10px;
+    } 
+    .mob-title1{
+      padding-bottom:20px;
+     
+    }  
+    #Organization{
+      margin-top: 15px;
+    }
+  }
+  .mob-title{
+    bottom:45px;
+  }
+  .mob-title1{
+    top:45px;
+  }

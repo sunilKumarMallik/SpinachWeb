@@ -1,0 +1,53 @@
+.splinechartHeader{
+    font-family: 'Roundo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8.86px;
+    line-height: 11px;
+    color: #000000;
+    position: relative;
+    left: -13px;
+}
+.splineChart-position{
+    position: relative;
+    left: -14px;
+}
+.count{
+    height: 59.71px;
+    width: 144.3px;
+}
+.campaign-Dashboard{
+    font-family: 'Roundo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8.86px;
+    line-height: 11px;
+    color: #000000;
+    position: relative;
+    top: 7px;
+}
+.campaign-clicked-counts{
+    font-family: 'Roundo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.5239px;
+    line-height: 120.2%;
+    color: #000000;
+    position: relative;
+    top: 20px;
+}
+.firstDate{
+    width: 70.26px;
+    height: 15.91px;
+    background: #EEF0F4;
+    border-radius: 1.76757px;
+}
+.Reached{
+    font-family: 'Roundo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.28953px;
+    line-height: 9px;
+    color: #3E4647;
+    text-align: center;
+}

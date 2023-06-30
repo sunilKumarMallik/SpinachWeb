@@ -1,0 +1,68 @@
+/* Replace below url with google fonts to be used */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "variables";
+@import "typography";
+body {
+    font-family: $font-content;
+    font-size: $content-medium;
+    font-weight: $fw-500;
+    line-height: 1.588;
+    color: $color-first;
+    background-color: $color-white;
+    box-sizing: border-box;
+}
+
+a,
+.button,
+button {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+a:focus,
+.button:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button {
+    outline: medium none;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.img-rounded {
+    border-radius: 40px;
+}
+
+
+/* spacing */
+
+.ptb_50 {
+    padding-top: $ptb_50;
+}
+
+.ptb_last_50 {
+    padding-bottom: $ptb_50;
+}
+
+.ptb_md_last_50 {
+    @media(min-width: 768px) {
+        padding-bottom: $ptb_50;
+    }
+}

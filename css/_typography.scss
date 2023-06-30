@@ -1,0 +1,42 @@
+p{
+    font-family: $font-content;
+    font-weight:$fw-600 ;
+    font-size: $content-normal;
+    line-height: 160%;
+    color: $color-black;
+}
+h1{
+    font-size: $heading-1;
+    font-family: $font-title;
+    font-weight: $fw-800;
+}
+h2{
+    font-size: $heading-2;
+    font-family: $font-title;
+    font-weight: $fw-800;
+}
+h3{
+    font-size: $heading-3;
+    font-family: $font-title;
+    font-weight: $fw-600;
+}
+h4{
+    font-size: $heading-4;
+    font-family: $font-title;
+    font-weight: $fw-600;
+}
+h5{
+    font-size: $heading-5;
+    font-family: $font-title;
+    font-weight: $fw-600;
+}
+h6{
+    font-size: $content-large;
+    font-family: $font-title;
+    font-weight: $fw-600;
+} 
+.sectxt-subtitle{
+    font-size: $content-normal;
+    font-family: $font-content;
+    font-weight: $fw-600;
+}

@@ -1,0 +1,33 @@
+
+.zigzag{
+    width:500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Group1{
+    stroke: lightgreen;
+    stroke-width: 4px;
+    fill: transparent;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 40;
+    animation: animate 10s linear infinite;
+}
+#Group2{
+    stroke:rgb(34, 29, 71);
+    stroke-width: 4px;
+    fill: transparent;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 40;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    to{
+        stroke-dashoffset: 0;
+    }
+    from{
+        stroke-dashoffset: 100;
+    }
+}

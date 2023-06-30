@@ -1,0 +1,109 @@
+/* .headerText{word-wrap: break-word} */
+
+@media (max-width: 600px) {
+  /* section {background-color: aqua;}
+    span{white-space: pre;} */
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerIcon {
+    display: none;
+  }
+  .img-animation-sec {
+    display: none;
+  }
+  .img-animation-sec-mobile {
+    display: block;
+  }
+  /* .bookDemoButton{display: block}; */
+}
+
+@media (min-width: 600px) {
+  .img-animation-sec-mobile {
+    display: none;
+  }
+  .bookDemoButton {
+    display: none;
+  }
+}
+
+.expence-tracker-mobile {
+  position: absolute;
+  left: -33px;
+  top: 178px;
+}
+
+.consumer-mobile {
+  position: absolute;
+  right: -142px;
+  top: 14%;
+}
+
+.merchant-data-mobile {
+  position: absolute;
+  bottom: 40%;
+  right: -12%;
+}
+
+.competitor-analytic-mobile {
+  position: absolute;
+  bottom: 214px;
+  left: -95px;
+}
+.bookDemoButton {
+  background: #45ae63;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 8px;
+  width: 167px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid #45ae63;
+  cursor: pointer;
+  /* display:none; */
+}
+.buttonContainer {
+  position: absolute;
+  left: 27%;
+  bottom: 24%;
+}
+
+@media (max-width: 700px) {
+  #main-homepage-banner {
+    height: 80vh;
+  }
+  .buttonContainer {
+    bottom: 40px;
+  }
+  .consumer-mobile {
+    left: 80%;
+    rotate: -60deg;
+  }
+  .merchant-data-mobile {
+    right: -18%;
+    bottom: 100px;
+  }
+  .competitor-analytic-mobile {
+    bottom: 40px;
+    rotate: 180deg;
+  }
+  .expence-tracker-mobile {
+    rotate: 180deg;
+    left: -18%;
+  }
+  .mob-top-header{
+    display: flex;
+   justify-content: center;
+   
+  }
+  .child-mob-top-header{
+max-width: 200px;
+  }
+}

@@ -1,0 +1,9 @@
+.bars{
+    transform-origin: bottom;
+    animation: tony 2s ease-in-out  ;
+  }
+  @keyframes tony {
+  0%{
+    transform: scaleY(0);
+  }
+  }

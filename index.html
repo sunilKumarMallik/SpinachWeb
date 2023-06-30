@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/footer-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinach</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=roundo@700,300,400,600,200,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  type="text/css"
+  charset="UTF-8"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+/>
+  </head>
+  <body class="act-about">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <style>
+      .animation {
+        height: 100vh;
+      }
+
+      @keyframes animate-width {
+        from {
+          scale: 1;
+          position: relative;
+          margin-top: auto !important;
+          transition: 100000s ease;
+        }
+
+        to {
+          scale: 0;
+          position: relative;
+          margin-top: -300px;
+          transition: 100000s ease;
+        }
+      }
+
+      h1.show {
+        animation-name: animate-width;
+        -webkit-animation-name: animate-width;
+        animation-duration: 1s;
+      }
+
+      #main-homepage-banner .content-box h1 {
+        font-family: "Roundo";
+        font-style: normal;
+        opacity: 1;
+        font-weight: 600;
+        font-size: 72px;
+
+        line-height: 89px;
+        text-align: center;
+        color: #3fca66;
+        text-shadow: 0px 20px 36px rgba(63, 202, 102, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/cde14cc095.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+    <script>
+      var controller = new ScrollMagic.Controller();
+      var sceneAnim = new ScrollMagic.Scene({
+        triggerElement: ".animation .content-box",
+        offset: "100",
+      })
+        .setClassToggle(".content-box h1 , .content-box p", "show")
+        .addTo(controller);
+    </script>
+
+    <script>
+      $(".btnNext").click(function () {
+        const nextTabLinkEl = $(".nav-tabs .active")
+          .closest("li")
+          .next("li")
+          .find("a")[0];
+        const nextTab = new bootstrap.Tab(nextTabLinkEl);
+        nextTab.show();
+      });
+
+      $(".btnPrevious").click(function () {
+        const prevTabLinkEl = $(".nav-tabs .active")
+          .closest("li")
+          .prev("li")
+          .find("a")[0];
+        const prevTab = new bootstrap.Tab(prevTabLinkEl);
+        prevTab.show();
+      });
+      $(".nav-link ").click(function () {
+        if ($(this).hasClass("active")) {
+          $(this).parent("li").addClass("active-tabs-sec");
+        }
+      });
+
+      // $(".trusted-by-banks-carousel").owlCarousel({
+      //   loop: false,
+      //   margin: 30,
+      //   nav: true,
+      //   dots: false,
+      //   autoplay: false,
+      //   responsive: {
+      //     0: {
+      //       items: 1.2,
+      //     },
+      //     600: {
+      //       items: 1.5,
+      //     },
+      //     1000: {
+      //       items: 1.5,
+      //     },
+      //     1200: {
+      //       items: 1.3,
+      //     },
+      //   },
+      // });
+
+      $(".bank-growing").owlCarousel({
+        loop: false,
+        margin: 30,
+        nav: true,
+        dots: false,
+        autoplay: false,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 3,
+          },
+          1200: {
+            items: 4,
+          },
+        },
+      });
+
+      $(document).ready(function () {
+        $(".trusted-by-banks-carousel .owl-prev").html(
+          '<span><img src="images/left-arrow.svg" alt=""></span>'
+        );
+        $(".trusted-by-banks-carousel .owl-next").html(
+          '<span><img src="images/right-arrow.svg" alt=""></span>'
+        );
+      });
+
+      $(".banking-experiance-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 3000,
+        loop: true,
+        nav: false,
+        navText: false,
+        center: true,
+        dots: false,
+        mouseDrag: false,
+        margin: 10,
+        navigation: true,
+        items: 1.2,
+      });
+
+      $(document).ready(function () {
+        $(".automatic-entering-carousel .owl-prev").html(
+          '<span><img src="images/left-arrow.svg" alt=""></span>'
+        );
+        $(".automatic-entering-carousel .owl-next").html(
+          '<span><img src="images/right-arrow.svg" alt=""></span>'
+        );
+      });
+
+      if ($.fn.owlCarousel) {
+        var imgtxtSlides = $(".automatic-entering-carousel");
+        imgtxtSlides.owlCarousel({
+          items: 2.3,
+          margin: 0,
+          loop: true,
+          autoplay: true,
+          center: true,
+          smartSpeed: 4000,
+          autoplaySpeed: 4000,
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          autoplayHoverPause: true,
+        });
+      }
+
+      $("#powerful-api-txt").click(function (e) {
+        $("#tab-1-title").text("Our engagement models");
+      });
+      $("#powerful-api-txt-2").click(function (e) {
+        $("#tab-1-title").text("Our Models of Engagement");
+      });
+      $("#powerful-api-txt-3").click(function (e) {
+        $("#tab-1-title").text("Our engagement models");
+      });
+      $("#powerful-api-txt-4").click(function (e) {
+        $("#tab-1-title").text(
+          "How banks can benefit from Spinach’s intelligence"
+        );
+      });
+
+      $(document).ready(function () {
+        var lastScroll = 0;
+
+        jQuery(document).ready(function ($) {
+          $(window).scroll(function () {
+            setTimeout(function () {
+              //gives 100ms to finish scrolling before doing a check
+              var scroll = $(window).scrollTop();
+              if (scroll > lastScroll) {
+                $(".navbar-sec").addClass("navbar-shadow");
+              } else if (scroll < lastScroll) {
+                $(".navbar-sec").removeClass("navbar-shadow");
+              }
+              lastScroll = scroll;
+            }, 100);
+          });
+        });
+      });
+    </script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
+
+    <script>
+      $("#collapseOne").on("shown.bs.collapse", function () {
+        if ($(" #first-acc ").addClass("radius-border-accordion")) {
+        }
+      });
+      $("#collapseOne").on("hidden.bs.collapse", function () {
+        if ($("#first-acc ").removeClass("radius-border-accordion")) {
+        }
+      });
+      $("#collapseTwo").on("shown.bs.collapse", function () {
+        if ($(" #sec-acc  ").addClass("radius-border-accordion")) {
+        }
+      });
+      $("#collapseTwo").on("hidden.bs.collapse", function () {
+        if ($("#sec-acc ").removeClass("radius-border-accordion")) {
+        }
+      });
+
+      $("#collapseThree").on("shown.bs.collapse", function () {
+        if ($(" #three-acc  ").addClass("radius-border-accordion")) {
+        }
+      });
+      $("#collapseThree").on("hidden.bs.collapse", function () {
+        if ($("#three-acc ").removeClass("radius-border-accordion")) {
+        }
+      });
+
+      $("#collapsefour").on("shown.bs.collapse", function () {
+        if ($("#four-acc").addClass("radius-border-accordion")) {
+        }
+      });
+      $("#collapsefour").on("hidden.bs.collapse", function () {
+        if ($("#four-acc").removeClass("radius-border-accordion")) {
+        }
+      });
+    </script>
+    <script>
+      /* Allow only company emails */
+      document
+        .getElementById("Email")
+        .setAttribute(
+          "pattern",
+          "^[a-zA-Z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!live.com)(?!outlook.com)[a-zA-Z0-9_-]+.[a-zA-Z0-9-.]{2,61}$"
+        )
+        .setAttribute(
+          "oninvalid",
+          "setCustomValidity('Please enter business email')"
+        )
+        .setAttribute("onchange", "try{setCustomValidity('')}catch(e){}')");
+    </script>
+
+    <script>
+      var maxData = 4;
+      let i = 2;
+      $(document).ready(function () {
+        var radius = 200;
+        var fields = $(".itemDot");
+        var container = $(".dotCircle");
+        var width = container.width();
+        radius = width / 2.5;
+
+        var height = container.height();
+        var angle = 0,
+          step = (2 * Math.PI) / fields.length;
+        fields.each(function () {
+          var x = Math.round(
+            width / 2 + radius * Math.cos(angle) - $(this).width() / 2
+          );
+          var y = Math.round(
+            height / 2 + radius * Math.sin(angle) - $(this).height() / 2
+          );
+          if (window.console) {
+            //console.log($(this).text(), x, y);
+          }
+
+          $(this).css({
+            left: x + "px",
+            top: y + "px",
+          });
+          angle += step;
+        });
+        $(".itemDot").click(function () {
+          var dataTab = $(this).data("tab");
+          console.log($(this).data("tab"));
+          $(".itemDot").removeClass("active");
+          $(this).addClass("active");
+          $(".CirItem").removeClass("active");
+          $(".CirItem" + dataTab).addClass("active");
+          i = dataTab;
+          circleRotValue = 360 - i * 90;
+          itemRotValue = i * 90;
+          $(".dotCircle").css({
+            transform: "rotate(" + circleRotValue + "deg) ",
+            transition: "2s",
+          });
+          $(".itemDot").css({
+            transform: "rotate(" + itemRotValue + "deg)",
+            transition: "1s",
+          });
+        });
+        setActiveTabOnTop();
+      });
+      function randomIntFromInterval(min, max) {
+        // min and max included
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+      //var intervalId = window.setInterval(function () {
+      //  const rndInt = randomIntFromInterval(1, 4);
+      // call your function here
+      //  updateClass(rndInt);
+      //  }, 2500);
+      function updateClass(rndInt) {
+        var dataTab = rndInt;
+        console.log($(this).data("tab"));
+        $(".itemDot").removeClass("active");
+        $(this).addClass("active");
+        $(".CirItem").removeClass("active");
+        $(".CirItem" + dataTab).addClass("active");
+        i = dataTab;
+        circleRotValue = 360 - i * 90;
+        itemRotValue = i * 90;
+        $(".dotCircle").css({
+          transform: "rotate(" + circleRotValue + "deg) ",
+          transition: "2s",
+        });
+        $(".itemDot").css({
+          transform: "rotate(" + itemRotValue + "deg)",
+          transition: "1s",
+        });
+        setActiveTabOnTop();
+      }
+
+      function setActiveTabOnTop() {
+        var dataTab = i;
+        i = dataTab;
+        circleRotValue = 360 - i * 90;
+        itemRotValue = i * 90;
+        $(".dotCircle").css({
+          transform: "rotate(" + circleRotValue + "deg)",
+          transition: "2s",
+        });
+        $(".itemDot").css({
+          transform: "rotate(" + itemRotValue + "deg)  ",
+          transition: "1s",
+        });
+      }
+      
+    </script>
+  </body>
+</html>

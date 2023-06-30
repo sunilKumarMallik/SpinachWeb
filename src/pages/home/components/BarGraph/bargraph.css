@@ -1,0 +1,24 @@
+.Rectangle1,
+.Rectangle2,
+.Rectangle3,
+.Rectangle4,
+.Rectangle5,
+.Rectangle6,
+.Rectangle7,
+.Rectangle8,
+.Rectangle9,
+.Rectangle10 {
+  transform-origin: bottom;
+  animation: bounce 1.5s ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: scaleY(-5);
+  }
+}
+.FitContaint{
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px;
+  margin-bottom: 1em;
+}

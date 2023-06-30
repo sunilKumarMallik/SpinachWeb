@@ -1,0 +1,24 @@
+.accordion-button:not(.collapsed) {
+    color: #212529 !important;
+  }
+ 
+@media (max-width: 700px){
+    .faq-box{
+        display: none;
+    }
+}
+@media (min-width: 700px){
+    .mob-faq-section{
+        display: none;
+    }
+    
+}
+@media (max-width: 700px){
+   #demo-box{
+    margin-top: 20px;
+   }
+}
+.font-styling{
+    font-size: "normal";
+    font-family: "Roundo";
+}

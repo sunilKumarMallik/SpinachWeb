@@ -1,0 +1,102 @@
+@media (max-width: 700px) {
+  #banking-experiance #banking-experiance-sec .content-box {
+    display: none !important;
+  }
+}
+@media (min-width: 700px) {
+  .mob-banking-exp {
+    display: none !important;
+  }
+  .decorated-bg {
+    box-sizing: border-box;
+    background-color: #0c082b;
+    border-radius: 16px;
+  }
+  .bank-card {
+    box-sizing: border-box;
+    background-color: #0c082b;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 700px) {
+  .mob-goal-based {
+    display: none !important;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  #banking-experiance #goal-based-planing .content-box {
+    display: none !important;
+  }
+  .goalbased-card {
+    background: #0c0729;
+    border-radius: 16px;
+    box-sizing: border-box;
+  }
+  .goalBased-btn {
+    background: #45ae63;
+    border-radius: 8px;
+    border: 1px solid #45ae63;
+    color: #fff;
+    font-family: "Roundo";
+  }
+  #banking-experiance
+    #automatic-entering-sec
+    .automatic-entering-carousel
+    button.owl-next,
+  #banking-experiance
+    #automatic-entering-sec
+    .automatic-entering-carousel
+    button.owl-prev {
+    visibility: hidden;
+  }
+  .img-tik {
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+  }
+  .thumbnail {
+    position: relative;
+  }
+  .caption {
+    position: absolute;
+    top: 21%;
+    left: 89px;
+    width: 74%;
+
+  }
+  .mob-goal-text1 {
+    text-align: center;
+  }
+  .mob-goal-header {
+    color: #fff;
+    margin-left: 10px;
+  }
+  .mob-goal-desc {
+    color: #fff;   
+    font-size:16px;
+    font-style:normal;
+    font-weight:200;
+  }
+  .mob-goal-subdesc {
+    color: #fff;
+    font-size: 16px;
+    font-style:normal;
+    font-weight:200;
+  }
+}
+#banking-experiance #smart-bytes .content-box .title-box .smart-heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 69px;
+    text-align: center;
+    color: #08051e;
+    text-shadow: 0px 20px 32px rgba(8, 5, 30, 0.24);
+}
+.mob-image-size{
+    height:38px
+}
+

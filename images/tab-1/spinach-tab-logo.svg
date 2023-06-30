@@ -1,0 +1,16 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1_7208" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+<ellipse cx="8" cy="8.46955" rx="8" ry="7.5656" transform="rotate(-180 8 8.46955)" fill="#3FCA66"/>
+</mask>
+<g mask="url(#mask0_1_7208)">
+<rect width="10.2984" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 8.05078 20.0413)" fill="#3FCA66"/>
+<rect width="8.58702" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 9.44141 18.6816)" fill="#3FCA66"/>
+<rect width="6.85476" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 10.8301 17.3201)" fill="#3FCA66"/>
+<rect width="6.63479" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 9.36719 5.4668)" fill="#3FCA66"/>
+<rect width="8.61919" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 12.2207 5.4436)" fill="#3FCA66"/>
+<rect width="10.2984" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 14.8496 5.21497)" fill="#3FCA66"/>
+<rect width="16.1435" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 5.85547 10.4902)" fill="#3FCA66"/>
+<rect width="16.1435" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 13.6094 14.5996)" fill="#3FCA66"/>
+<rect width="16.1435" height="1.38897" rx="0.694487" transform="matrix(-0.738409 -0.674354 0.714462 -0.699674 20.4434 18.0566)" fill="#3FCA66"/>
+</g>
+</svg>
